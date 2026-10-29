@@ -1,11 +1,12 @@
 
-const express = require("express");
+const express = require("express");// Server.Js
 const cors = require("cors");
 require("dotenv").config();
 
 console.log(
     "Gemini API key loaded:",
     Boolean(process.env.GEMINI_API_KEY)
+    // AI API key is Required Here
 );
 
 const { GoogleGenAI } = require("@google/genai");
